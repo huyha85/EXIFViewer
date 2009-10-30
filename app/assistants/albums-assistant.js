@@ -25,7 +25,7 @@ AlbumsAssistant.prototype.setup = function()
 		items:
 		[
 			{
-				label: $L('Chose Styles'),
+				label: $L('Choose A Style'),
 				command: 'cmd-SelectStyles'
 			},
 			{
@@ -70,8 +70,8 @@ AlbumsAssistant.prototype.handleCommand = function(event)
 				(
 					{
 						title: $L("Prefs Menu"),
-						template: 'dialogs/chosestyledialog-scene',
-						assistant: new ChosestyledialogAssistant(this,this.chosestylesdialogCallbackFunc.bind(this)),
+						template: 'dialogs/choosestyledialog-scene',
+						assistant: new ChoosestyledialogAssistant(this,this.choosestylesdialogCallbackFunc.bind(this)),
 						preventCancel: false
 					}
 				);
@@ -95,7 +95,7 @@ AlbumsAssistant.prototype.readAboutDialog = function()
 	
 }
 
-AlbumsAssistant.prototype.chosestylesdialogCallbackFunc = function()
+AlbumsAssistant.prototype.choosestylesdialogCallbackFunc = function()
 {
 	var lBGAlbumsElement = this.controller.get("background");
 	if (DB.myGalleryDB.currentStyleName == 'positivefilm')

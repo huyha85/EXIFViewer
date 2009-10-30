@@ -1,4 +1,4 @@
-function ChosestyledialogAssistant(aSceneAssistant,aCallBackFunc)
+function ChoosestyledialogAssistant(aSceneAssistant,aCallBackFunc)
 {
 	this.sceneAssistant = aSceneAssistant;
 	this.callbackFunc = aCallBackFunc;
@@ -6,7 +6,7 @@ function ChosestyledialogAssistant(aSceneAssistant,aCallBackFunc)
 	//this.controller.get("styleSelector").update("it ok");
 }
 
-ChosestyledialogAssistant.prototype.setup = function(widget)
+ChoosestyledialogAssistant.prototype.setup = function(widget)
 {
 	this.widget = widget;
 	this.selectorChanged = this.selectorChanged.bindAsEventListener(this);
@@ -33,12 +33,12 @@ ChosestyledialogAssistant.prototype.setup = function(widget)
 	
 }
 
-ChosestyledialogAssistant.prototype.closeDialog = function(event)
+ChoosestyledialogAssistant.prototype.closeDialog = function(event)
 {
 	this.widget.mojo.close();
 }
 
-ChosestyledialogAssistant.prototype.selectorChanged = function(event)
+ChoosestyledialogAssistant.prototype.selectorChanged = function(event)
 {
 	//this.controller.get("tester").update("it ok");
 	//this.widget.mojo.close();
@@ -61,7 +61,7 @@ ChosestyledialogAssistant.prototype.selectorChanged = function(event)
 	);
 }
 
-ChosestyledialogAssistant.prototype.setupChoices = function()
+ChoosestyledialogAssistant.prototype.setupChoices = function()
 {
 	
 	//this.controller.get("styleSelector").update("it ok alibaba");
@@ -78,15 +78,15 @@ ChosestyledialogAssistant.prototype.setupChoices = function()
 	];
 }
 
-ChosestyledialogAssistant.prototype.activate = function(event)
+ChoosestyledialogAssistant.prototype.activate = function(event)
 {
 }
 
 
-ChosestyledialogAssistant.prototype.deactivate = function(event)
+ChoosestyledialogAssistant.prototype.deactivate = function(event)
 {
 }
 
-ChosestyledialogAssistant.prototype.cleanup = function(event)
+ChoosestyledialogAssistant.prototype.cleanup = function(event)
 {
 }

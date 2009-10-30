@@ -1,6 +1,8 @@
 /* Developed by East Agile Limited, http://eastagile.com, October 2009 */
 
-
+/*
+ * This is a queue for javascript
+ */
 
 function Queue ()
 {
